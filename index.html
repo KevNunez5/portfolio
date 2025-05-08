@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Portafolio Kevin Núñez</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header>
+    <nav>
+        <h1>Kevin Núñez</h1>
+        <ul>
+            <li><a href="#about">Sobre mí</a></li>
+            <li><a href="#projects">Proyectos</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+
+<section id="hero">
+    <h2>Desarrollador de Software & Estudiante ITC</h2>
+    <p>Construyendo soluciones creativas con tecnología.</p>
+</section>
+
+<section id="about">
+    <h2>Sobre mí</h2>
+    <p>
+        Soy estudiante de Ingeniería en Tecnologías Computacionales en el Tec de Monterrey. He trabajado en desarrollo web, aplicaciones móviles y proyectos de impacto social. Fundador de Constella Software Solutions y Lidevia Speak. Me especializo en frontend, APIs con Node.js y SCRUM.
+    </p>
+</section>
+
+<section id="projects">
+    <h2>Proyectos Destacados</h2>
+    <div class="project-list">
+        <div class="project">
+            <h3>Uber Concurrente</h3>
+            <p>Simulación de procesos concurrentes para un sistema estilo Uber.</p>
+            <a href="https://github.com/KevNunez5/uberCOncurrente" target="_blank">Ver repositorio</a>
+        </div>
+        <div class="project">
+            <h3>Pawsitive Vibes CDMX</h3>
+            <p>Proyecto social con enfoque en mascotas y bienestar emocional.</p>
+            <a href="https://github.com/KevNunez5/pawsitiveVibesCDMX" target="_blank">Ver repositorio</a>
+        </div>
+        <div class="project">
+            <h3>Matrix Similitud</h3>
+            <p>Proyecto para analizar similitudes entre textos plagiados usando algoritmos personalizados.</p>
+            <a href="https://github.com/KevNunez5/matrixSimilitud" target="_blank">Ver repositorio</a>
+        </div>
+        <div class="project">
+            <h3>Tráfico Simple</h3>
+            <p>Simulación de tráfico urbano y análisis de movilidad.</p>
+            <a href="https://github.com/KevNunez5/traficoSimple" target="_blank">Ver repositorio</a>
+        </div>
+        <div class="project">
+            <h3>La Madriguera</h3>
+            <p>Aplicación creativa con interfaz amigable para la organización Topos F.C..</p>
+            <a href="https://github.com/KevNunez5/la-madriguera" target="_blank">Ver repositorio</a>
+        </div>
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Contacto</h2>
+    <p>Email: <a href="mailto:kevin500nunez@gmail.com">kevin500nunez@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/vekin/" target="_blank">/vekin</a></p>
+</section>
+
+<footer>
+    <p>© 2025 Kevin Núñez. Todos los derechos reservados.</p>
+</footer>
+
+<script>
+    // Scroll suave
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener("click", function (e) {
+            e.preventDefault();
+            document.querySelector(this.getAttribute("href")).scrollIntoView({ behavior: "smooth" });
+        });
+    });
+</script>
+</body>
+</html>
